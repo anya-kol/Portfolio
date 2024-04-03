@@ -25,7 +25,6 @@ ul.no-bullets {
 
 .me {
   padding: 0px;
-  width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -33,6 +32,10 @@ ul.no-bullets {
 }
 
 .photo {
+  height: 200px;
+  width: 200px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 150px;
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
 }
