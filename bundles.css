@@ -1,0 +1,38 @@
+/* style for skills.html  */
+.skills {
+  margin: 50px;
+  font-size: larger;
+  color: gray;
+  text-align: center;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+}
+
+/* style for contactUs.html */
+
+.logos {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.me {
+  padding: 0px;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

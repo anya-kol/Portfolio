@@ -8,26 +8,52 @@
       href="https://fonts.googleapis.com/css2?family=Dosis&family=Merienda:wght@300..900&family=Roboto+Serif:opsz@8..144&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
+  `
   <body>
     <main>
-      <div class="header">
-        <h1>Hi</h1>
-        <h2>I'am Anna</h2>
-        <p>IT programmer</p>
-      </div>
-
       <div>
-        <img src="./images/me1.jpg" alt="happy face" />
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="skills.html">Skills</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contactUs.html">Contact me</a>
+        </nav>
       </div>
 
-      <div class="button" id="home">Home</div>
-      <div class="button" id="portfolio">Portfolio</div>
-      <div class="button" id="contactMe">Contact me</div>
+      <div class="header">
+        <h1 id="first-header">Welcome to my portfolio!</h1>
+        <h2 id="second-header">My name is Anna</h2>
+        <p class="dscription">
+          I am an aspiring IT programmer with a passion for learning and a drive
+          to excel in the world of technology. I have recently completed my
+          training on Codecademy, where I gained a solid foundation in
+          programming languages such as HTML, CSS, JavaScript and Python , as
+          well as hands-on experience with React, Node.js, and GitHub."
+        </p>
+      </div>
+
+      <!-- 3 color circles  -->
+      <div class="button-container">
+        <div class="button" id="skills" class="col-4">
+          <a href="skills.html">Skills</a>
+        </div>
+        <div class="button" id="portfolio" class="col-4">
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="button" id="contactMe" class="col-4">
+          <a href="contactUs.html">Contact me</a>
+        </div>
+      </div>
+      <!-- end -->
     </main>
 
-    <footer>email: anya109@yahoo.co.uk</footer>
+    <div>
+      <footer>email: anya109@yahoo.co.uk</footer>
+    </div>
+    <script src="skills.js"></script>
   </body>
 </html>
 

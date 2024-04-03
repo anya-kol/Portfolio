@@ -1,47 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  position: relative; /* Relative positioning for absolute children */
   background-color: blanchedalmond;
   font-family: "Merienda", cursive, "Arial";
   font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.nav-bar {
+  padding: 5px;
+  text-align: center; /* Align the contents of the nav-bar to the center */
+  margin: 25px auto; /* Center the nav-bar horizontally */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: grey;
+  margin: 0 10px; /* Add some horizontal spacing between navigation items */
+}
 .header {
   color: gray;
+  text-align: center;
+  margin: 50px 10px;
 }
 
-img {
-  border: solid 1px black;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
+.dscription {
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
+
+/* start 3 color circles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Remove fixed height */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  margin-top: 20px; /* Add margin to separate from the header */
+}
+
 .button {
-  border: solid 1px black;
-  height: 200px;
-  width: 200px;
-  line-height: 200px;
+  border: solid 1px grey;
+  height: 150px; /* Reduce button height */
+  width: 150px; /* Reduce button width */
+  line-height: 150px; /* Adjust line-height */
   border-radius: 50%;
   text-align: center;
-  font-size: 2em;
-  color: #fff;
-  display: inline-block;
-  margin: 0 5px;
+  font-size: 1.5em; /* Reduce font size */
+  color: black;
+  margin: 10px; /* Adjust margin */
 }
 
-#home {
-  background-color: rgb(255, 0, 98, 0.5);
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+#skills {
+  background-color: rgb(255, 0, 98, 0.25);
 }
 
 #portfolio {
-  background-color: rgb(60, 206, 243, 0.5);
+  background-color: rgb(60, 206, 243, 0.25);
 }
 
 #contactMe {
-  background-color: rgb(66, 221, 28, 0.5);
+  background-color: rgb(66, 221, 28, 0.25);
 }
+/* end 3 color circles */
 
 footer {
   margin-top: 50px;
   font-size: 0.75em;
   text-align: center;
   color: grey;
+}
+
+/* mobile screens */
+@media only screen and (max-width: 600px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav-bar a {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .dscription {
+    text-align: justify;
+    margin: 10px;
+    padding: 0px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    margin: 10px; /* Add margin to buttons */
+  }
 }
